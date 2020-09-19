@@ -1,0 +1,63 @@
+.infoBox {
+  flex: 1;
+  cursor: pointer;
+}
+.infoBox:not(:last-child) {
+  margin-right: 15px;
+}
+
+.infoBox--selected {
+  border-top: 10px solid;
+}
+.infoBox--red {
+  border-color: #ab0d34;
+}
+.infoBox--green {
+  border-color: #8ae331;
+}
+.infoBox--black {
+  border-color: #865a5a;
+}
+
+.infoBox__cases {
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+.infoBox--red .infoBox__cases {
+  color: #ab0d34;
+}
+.infoBox--green .infoBox__cases {
+  color: #8ae331;
+}
+.infoBox--black .infoBox__cases {
+  color: #865a5a;
+}
+
+.infoBox__cases--green {
+  color: lightgreen !important;
+}
+.infoBox__total {
+  color: #6c757d;
+  font-weight: 700 !important;
+  font-size: 0.8rem !important;
+  margin-top: 15px !important;
+}
+
+/*=======================================
+  MEDIA QUERIES for INFOBOX
+  =======================================*/
+@media only screen and (max-width: 600px) {
+  .infoBox .MuiCardContent-root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+    padding: 5px;
+  }
+
+  .infoBox__cases {
+    font-size: 1.5rem;
+  }
+}

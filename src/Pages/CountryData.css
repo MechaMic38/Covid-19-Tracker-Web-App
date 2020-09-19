@@ -1,0 +1,76 @@
+.countryData {
+  position: relative;
+  padding: 20px;
+}
+.countryData__main {
+  display: flex;
+  justify-content: space-evenly;
+}
+.countryData__graphContainer {
+  min-height: 300px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.countryData__left {
+  flex: 0.9;
+}
+.countryData__right {
+  display: flex;
+  flex-direction: column;
+}
+.countryData__right .MuiCardContent-root {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.countryData__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+}
+.countryData__header > h1 {
+  color: #fc3c3c;
+  font-size: 2rem;
+}
+.countryData__dropdown {
+  background-color: white;
+}
+.countryData__stats {
+  display: flex;
+  justify-content: space-between;
+}
+.countryData__graphWrapper {
+  margin-top: 20px;
+}
+.countryData__graphTitle {
+  margin-bottom: 20px;
+}
+.countryData__graphTitle strong {
+  color: #682f8a;
+}
+.countryData__graph {
+  flex-grow: 1;
+  width: 95%;
+}
+
+/*=======================================
+  MEDIA QUERIES for CountryData
+  =======================================*/
+@media only screen and (max-width: 990px) {
+  .countryData__main {
+    flex-direction: column;
+  }
+  .countryData__header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .countryData__dropdown {
+    margin-top: 20px !important;
+    width: 100%;
+    text-align: center;
+  }
+}
