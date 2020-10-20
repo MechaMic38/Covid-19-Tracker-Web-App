@@ -1,8 +1,10 @@
 .table {
   margin-top: 20px;
   margin-bottom: 20px;
-  overflow-y: scroll;
   height: 400px;
+}
+#worldTable {
+  overflow-y: overlay;
 }
 .table tr {
   display: flex;
@@ -12,5 +14,20 @@
   padding: 0.5rem;
 }
 .table tr:nth-of-type(odd) {
-  background-color: #f2eff5;
+  background-color: var(--bg-secondary);
+}
+
+#worldTable::-webkit-scrollbar {
+  width: 5px;
+}
+#worldTable::-webkit-scrollbar-track {
+  background: transparent;
+}
+#worldTable::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 999px;
+  border: 3px;
+}
+#worldTable:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
 }

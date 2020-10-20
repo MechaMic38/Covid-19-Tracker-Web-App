@@ -37,7 +37,7 @@
   font-size: 2rem;
 }
 .countryData__dropdown {
-  background-color: white;
+  background-color: var(--bg-secondary);
 }
 .countryData__stats {
   display: flex;

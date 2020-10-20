@@ -3,7 +3,7 @@
   font-size: 14px;
   text-align: center;
   color: #303030;
-  background-color: #111;
+  background-color: var(--bg-tertiary);
 }
 footer ul {
   padding: 0;

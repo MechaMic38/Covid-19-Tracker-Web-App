@@ -4,7 +4,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  background-color: #f2eff5;
+  background-color: var(--bg-secondary);
 }
 .countryData__countryName {
   text-align: center;
@@ -26,5 +26,5 @@
   padding: 0.5rem;
 }
 .countryTable__table tr:nth-of-type(odd) {
-  background-color: #f2eff5;
+  background-color: var(--bg-secondary);
 }
