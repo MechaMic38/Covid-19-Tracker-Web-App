@@ -48,7 +48,7 @@
   margin-top: 40px;
 }
 .countryData__graphWrapper {
-  width: 94%;
+  width: 94% !important;
   margin: 0 auto 20px auto !important;
 }
 .countryData__graphTitle {
@@ -77,5 +77,8 @@
     margin-top: 20px !important;
     width: 100%;
     text-align: center;
+  }
+  .countryData__graphWrapper {
+    width: 100% !important;
   }
 }

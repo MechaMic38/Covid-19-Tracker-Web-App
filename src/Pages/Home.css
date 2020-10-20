@@ -77,4 +77,8 @@
     width: 100%;
     text-align: center;
   }
+  .home__graphWrapper {
+    width: 100% !important;
+    margin: 0 auto 20px auto !important;
+  }
 }
