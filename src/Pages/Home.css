@@ -46,8 +46,12 @@
   display: flex;
   justify-content: space-between;
 }
+.home__interactive {
+  margin-top: 40px;
+}
 .home__graphWrapper {
-  margin-top: 20px;
+  width: 94% !important;
+  margin: 0 auto 20px auto !important;
 }
 .home__graphTitle {
   margin-bottom: 20px;

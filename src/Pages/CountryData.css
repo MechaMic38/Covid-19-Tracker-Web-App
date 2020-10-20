@@ -43,8 +43,13 @@
   display: flex;
   justify-content: space-between;
 }
+
+.countryData__interactive {
+  margin-top: 40px;
+}
 .countryData__graphWrapper {
-  margin-top: 20px;
+  width: 94%;
+  margin: 0 auto 20px auto !important;
 }
 .countryData__graphTitle {
   margin-bottom: 20px;
