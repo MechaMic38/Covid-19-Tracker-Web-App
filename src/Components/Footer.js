@@ -18,10 +18,8 @@ function Footer() {
       <ul className="copyright">
         <li>
           &copy; All credit goes to Pluda Michael (aka{" "}
-          <a href="https://www.fiverr.com/mechamic_38?up_rollout=true">
-            MechaMic_38
-          </a>
-          ) - Copyright 2020 Pluda Michael
+          <a href="https://mechamic38.netlify.app">MechaMic_38</a>) - Copyright
+          2020 Pluda Michael
         </li>
       </ul>
     </footer>
