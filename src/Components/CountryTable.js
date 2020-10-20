@@ -15,8 +15,8 @@ function CountryTable({ countryData }) {
         <img className="countryTable__flag" src={flag && flag.column} alt="" />
       </div>
       <div className="countryTable__table">
-        {data.map((item) => (
-          <tr>
+        {data.map((item, i) => (
+          <tr key={i}>
             <td>{item.row}</td>
             <td>{item.column}</td>
           </tr>

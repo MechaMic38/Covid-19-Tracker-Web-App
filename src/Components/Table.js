@@ -7,9 +7,9 @@ function Table({ countries, casesType = "cases" }) {
   const sortedData = sortData(countries, casesType);
 
   return (
-    <div className="table">
+    <div className="table" id="worldTable">
       {sortedData.map((country) => (
-        <tr>
+        <tr key={country.country}>
           <td>{country.country}</td>
           <td>
             <strong>{numeral(country[casesType]).format("0,0")}</strong>

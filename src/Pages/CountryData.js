@@ -121,8 +121,10 @@ function CountryData() {
                   onChange={onCountryChange}
                   value={country}
                 >
-                  {countries.map((country) => (
-                    <MenuItem value={country.value}>{country.name}</MenuItem>
+                  {countries.map((country, i) => (
+                    <MenuItem key={i} value={country.value}>
+                      {country.name}
+                    </MenuItem>
                   ))}
                 </Select>
               </FormControl>
@@ -133,7 +135,7 @@ function CountryData() {
                 isRed
                 active={casesType === "cases"}
                 onClick={(e) => setCasesType("cases")}
-                title="Coronavirus Cases"
+                title="Cases"
                 cases={prettyPrintStat(countryInfo.todayCases)}
                 total={numeral(countryInfo.cases).format("0,0")}
               />

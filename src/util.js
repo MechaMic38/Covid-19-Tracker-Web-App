@@ -106,8 +106,9 @@ export const createCountryData = (disData, restData) => {
 
 //Draw circles on the map with interactive tooltip
 export const showDataOnMap = (data, casesType = "cases") =>
-  data.map((country) => (
+  data.map((country, i) => (
     <Circle
+      key={i}
       center={[country.countryInfo.lat, country.countryInfo.long]}
       fillOpacity={0.4}
       color={casesTypeColors[casesType].hex}
